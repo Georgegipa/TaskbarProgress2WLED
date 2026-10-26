@@ -1,0 +1,5 @@
+{
+  "wled_ip": "192.168.1.1",
+  "color_active": [255, 0, 0],
+  "color_background": [0, 0, 255]
+}
