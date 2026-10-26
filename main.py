@@ -39,8 +39,7 @@ CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.j
 
 def load_config():
     default = {
-        "wled_ip": "192.168.1.150",
-        "led_count": 30,
+        "wled_ip": "192.168.1.1",
         "color_active": [0, 255, 0],
         "color_background": [40, 40, 40]
     }
@@ -131,7 +130,7 @@ def find_first_target():
 def main():
     cfg = load_config()
     wled = WledController(
-        ip=cfg.get("wled_ip", "192.168.1.150"),
+        ip=cfg.get("wled_ip", "192.168.1.1"),
         led_count=cfg.get("led_count", 30),
         col_active=cfg.get("color_active", [0, 255, 0]),
         col_bg=cfg.get("color_background", [40, 40, 40])
